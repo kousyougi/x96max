@@ -8,7 +8,7 @@
 #========================================================================================================================
 
 # Uncomment a feed source
-sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
+# sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
 # sed -i 's/\"#src-git\"/\"src-git\"/g' feeds.conf.default
 
 # Add a feed source
@@ -17,3 +17,4 @@ sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
 # other
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
 
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/parted package/parted
