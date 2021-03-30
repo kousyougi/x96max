@@ -15,11 +15,10 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  schedule:
-    - cron: '0 17 * * *'
+
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://www.github.com/openwrt/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: router/s9xxx/feeds.conf.default
   CONFIG_FILE: router/s9xxx/.config
@@ -29,8 +28,8 @@ env:
   UPLOAD_ARMVIRT: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
-  UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
+  UPLOAD_COWTRANSFER: true
+  UPLOAD_WETRANSFER: true
   RECENT_LASTEST: 3
   TZ: Asia/Shanghai
 
@@ -194,7 +193,7 @@ jobs:
           Default IP: 192.168.1.1
           Default username: root
           Default password: password
-          Default WIFI name: OpenWrt
+
           Default WIFI password: none
           Install command: openwrt-install
           Update command: openwrt-update
