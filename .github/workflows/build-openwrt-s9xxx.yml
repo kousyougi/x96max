@@ -143,7 +143,7 @@ jobs:
         if-no-files-found: ignore
 
     - name: Package Armvirt as OpenWrt
-      if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      if: steps.compile.outputs.status == 'success' && !cancelled()
                
             
       uses: ophub/amlogic-s9xxx-openwrt@main
@@ -154,7 +154,7 @@ jobs:
                                                       
                           
         amlogic_openwrt: s905x3_s905x2_s905x_s905d_s922x_s912
-        amlogic_kernel: 5.10.33.TF_5.4.115
+        amlogic_kernel: 5.10.36.TF_5.4.118
         amlogic_size: 1024
                                            
                                                 
