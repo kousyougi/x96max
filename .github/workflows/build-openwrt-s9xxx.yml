@@ -154,7 +154,7 @@ jobs:
                                                       
                           
         amlogic_openwrt: s905x3_s905x2_s905x_s905d_s922x_s912
-        amlogic_kernel: 5.12.9.TF_5.4.124
+        amlogic_kernel: 5.12.9_5.4.124
         amlogic_size: 1024
                                            
                                                 
