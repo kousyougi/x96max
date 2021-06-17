@@ -26,7 +26,7 @@ env:
   DIY_P2_SH: router/amlogic_s9xxx/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_ARMVIRT: false
-  UPLOAD_FIRMWARE: true
+  UPLOAD_FIRMWARE: false
   UPLOAD_RELEASE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
@@ -35,7 +35,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
@@ -48,7 +48,7 @@ jobs:
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-1804)
+        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
@@ -154,7 +154,7 @@ jobs:
                                                       
                           
         amlogic_openwrt: s905x3_s905x2_s905x_s905d_s922x_s912
-        amlogic_kernel: 5.12.10_5.4.125
+        amlogic_kernel: 5.12.11_5.4.126
         amlogic_size: 1024
                                            
                                                 
