@@ -18,4 +18,4 @@
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
 
 # svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/parted package/parted
-svn co https://github.com/kousyougi/openwrt/trunk/parted package/parted
+# svn co https://github.com/kousyougi/openwrt/trunk/parted package/parted
