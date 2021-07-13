@@ -151,7 +151,7 @@ jobs:
                                                           
         armvirt64_path: openwrt/bin/targets/*/*/*.tar.gz
         amlogic_openwrt: s905x3_s905x2_s905x_s905d_s922x_s912
-        amlogic_kernel: 5.12.14_5.4.129
+        amlogic_kernel: 5.13.1_5.4.131
         amlogic_size: 256
                                            
                                                 
